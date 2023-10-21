@@ -23,15 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Server settings
         $mail->SMTPDebug = 0; //  0 for production use
         $mail->isSMTP();
-        $mail->Host = 'mail.bookworms.com.ng'; // Your SMTP host
+        $mail->Host = 'mail.example.com'; // Your SMTP host
         $mail->SMTPAuth = true;
-        $mail->Username = '_mainaccount@bookworms.com.ng'; // Your SMTP username
-        $mail->Password = 'E+%PW!2V4f!'; // Your SMTP password
+        $mail->Username = 'xxx@example.com'; // Your SMTP username
+        $mail->Password = 'xxxxxxx'; // Your SMTP password
         $mail->SMTPSecure = 'ssl'; // Enable TLS encryption;
         $mail->Port = 465; // TCP port to connect to
 
         // Recipients
-        $mail->setFrom('support@bookworms.com.ng', 'Bookworms'); // Your email address and name
+        $mail->setFrom('example.com', 'example'); // Your email address and name
         $mail->addAddress($recipientEmail); // Use recipient's email address and name
 
         // Content
